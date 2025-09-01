@@ -25,7 +25,7 @@ A aplicação exibe filmes populares, permite pesquisa por título e mostra deta
 
 ### Clone o repositório:  
 ```
-git clone https://github.com/leonanthomaz/catalogo-filmes-tmdb
+git clone https://github.com/leonanthomaz/movie
 cd firecloud
 ```
 #### Rodar o projeto:
