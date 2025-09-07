@@ -16,7 +16,7 @@ import {
   Info, 
   Star
 } from '@mui/icons-material';
-import type { Movie } from '../../types/movie';
+import type { Movie } from '../../../types/movie';
 
 interface HeroProps {
   movies: Movie[];

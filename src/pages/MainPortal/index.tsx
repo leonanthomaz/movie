@@ -6,8 +6,8 @@ import { moviesApi } from '../../services/api/movies';
 import type { Movie } from '../../types/movie';
 import Loading from '../../components/Loading';
 import Navbar from '../../components/Navbar';
-import Hero from '../../components/MovieHero'; // Certifique-se que o caminho está correto
-import MovieCarousel from '../../components/MovieCarousel';
+import Hero from '../../components/Movie/MovieHero'; // Certifique-se que o caminho está correto
+import MovieCarousel from '../../components/Movie/MovieCarousel';
 import Footer from '../../components/Footer';
 
 const MainPortal: React.FC = () => {

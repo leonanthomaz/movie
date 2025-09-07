@@ -179,7 +179,7 @@ const Navbar: React.FC = () => {
   };
 
   const handleLogoClick = () => {
-    navigate('/');
+    navigate('/movie');
     setSearchQuery('');
     setShowResults(false);
   };
@@ -205,11 +205,12 @@ const Navbar: React.FC = () => {
   };
 
   const getNavItems = () => [
-    { label: 'Início', icon: <Home />, path: '/' },
-    { label: 'Populares', icon: <Whatshot />, path: '/genres/popular' },
-    { label: 'Em Cartaz', icon: <Theaters />, path: '/genres/now-playing' },
-    { label: 'Melhores', icon: <Star />, path: '/genres/top-rated' },
-    { label: 'Gêneros', icon: <Theaters />, path: '/genres', hasSubmenu: true },
+    { label: 'Início', icon: <Home />, path: '/movie' },
+    { label: 'Ação', icon: <Whatshot />, path: '/genres/28' },   // id = 28
+    { label: 'Comédia', icon: <Theaters />, path: '/genres/35' }, // id = 35
+    { label: 'Drama', icon: <Star />, path: '/genres/18' },       // id = 18
+    { label: 'Terror', icon: <Theaters />, path: '/genres/27' },  // id = 27
+    { label: 'Gêneros', icon: <Theaters />, path: '/genres/28', hasSubmenu: true },
   ];
 
   return (

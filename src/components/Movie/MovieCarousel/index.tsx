@@ -21,7 +21,7 @@ import {
   LocalFireDepartment,
   Whatshot
 } from '@mui/icons-material';
-import type { Movie } from '../../types/movie';
+import type { Movie } from '../../../types/movie';
 import MovieCard from '../MovieCard';
 
 interface MovieCarouselProps {

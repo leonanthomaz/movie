@@ -26,7 +26,7 @@ import {
 import { moviesApi } from '../../services/api/movies';
 import type { Movie, Genre } from '../../types/movie';
 import Navbar from '../../components/Navbar';
-import MovieCard from '../../components/MovieCard';
+import MovieCard from '../../components/Movie/MovieCard';
 import Loading from '../../components/Loading';
 
 const MovieGenresPage: React.FC = () => {

@@ -33,8 +33,7 @@ import type { Movie, MovieDetails, Cast, Crew } from '../../types/movie';
 import { useGlobal } from '../../context/GlobalContext';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-// import MovieTorrentDownload from '../MovieTorrentDownload';
-import MovieVideo from '../MovieVideo'; // Importando o componente modal
+import MovieVideo from '../../components/Movie/MovieVideo';
 
 interface RecommendedMovies {
   results: Movie[];
@@ -50,6 +49,8 @@ const MovieDetailPage: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const { isLoading, setIsLoading } = useGlobal();
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  console.log("movie", movie)
 
   const fetchMovieData = useCallback(async (movieId: string | number) => {
     if (!movieId) return;
@@ -452,11 +453,10 @@ const MovieDetailPage: React.FC = () => {
                     }
                   }}
                 >
-                  Assistir Filme
+                  Assistir Trailer
                 </Button>
 
                 
-                {/* <MovieTorrentDownload movieTitle={movie.title} /> */}
               </Stack>
             </Box>
           </Box>
@@ -597,7 +597,7 @@ const MovieDetailPage: React.FC = () => {
           >
             <Close />
           </IconButton>
-          <MovieVideo tmdbId={movie.id} />
+          <MovieVideo videos={movie.videos} />
         </Box>
       </Modal>
       
