@@ -13,7 +13,7 @@ import {
   Skeleton
 } from '@mui/material';
 import { Star, CalendarToday, Visibility, PlayArrow } from '@mui/icons-material';
-import type { Movie } from '../../types/movie';
+import type { Movie } from '../../../types/movie';
 
 interface MovieCardProps {
   movie: Movie;
