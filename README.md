@@ -10,6 +10,7 @@ A aplicação exibe filmes populares, permite pesquisa por título e mostra deta
 - Listagem de filmes populares (usando TMDB)
 - Pesquisa de filmes por título
 - Exibição de cartazes, títulos e descrições
+- Botão para assistir o trailer do filme correspondente
 - Layout responsivo com tema escuro
 - Interface estilizada com Material UI
 
